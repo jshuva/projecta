@@ -19,7 +19,7 @@ namespace ProjectA
             ClassA a = new ClassA();
             a.Method1();
             a.Method2();
-            a.Method3();
+            a.Method3(); // test method
 
             ClassB b = new ClassB();
             b.Method1();
