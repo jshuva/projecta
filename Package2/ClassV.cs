@@ -8,9 +8,14 @@ namespace Package2
 {
     public class ClassV
     {
+        IInterfaceC c;
+
+        public ClassV(IInterfaceC newC)
+        {
+            c = newC;
+        }
         public void Method2()
         {
-            ClassC c = new ClassC();
             c.Method1();
         }
     }

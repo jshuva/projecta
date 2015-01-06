@@ -41,14 +41,21 @@
   <ItemGroup>
     <Compile Include="ClassB.cs" />
     <Compile Include="ClassG.cs" />
+    <Compile Include="ClassGPublic.cs" />
     <Compile Include="ClassH.cs" />
     <Compile Include="ClassN.cs" />
     <Compile Include="ClassR.cs" />
     <Compile Include="ClassS.cs" />
     <Compile Include="ClassW.cs" />
     <Compile Include="ClassY.cs" />
-    <Compile Include="IInterfaceSomething.cs" />
+    <Compile Include="IInterfaceG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Package1\Package1.csproj">
+      <Project>{2bb5ed6d-0793-4250-bd3d-b2a6a59a71a7}</Project>
+      <Name>Package1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,9 +9,14 @@ namespace Package2
 {
     public class ClassO
     {
+        IInterfaceT t;
+
+        public ClassO(IInterfaceT newT)
+        {
+            t = newT;
+        }
         public void Method2()
         {
-            ClassT t = new ClassT(new ClassE());
             t.Method2();
         }
     }

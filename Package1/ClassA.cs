@@ -1,4 +1,4 @@
-﻿using Package3;
+﻿//using Package3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,17 @@ using System.Threading.Tasks;
 
 namespace Package1
 {
-    public class ClassA
+    public class ClassA : IInterfaceA
     {
+        IInterfaceS s;
+        IInterfaceY y;
+
+        public ClassA(IInterfaceS newS, IInterfaceY newY)
+        {
+            s = newS;
+            y = newY;
+        }
+
         public void Method1()
         {
 
@@ -16,14 +25,13 @@ namespace Package1
 
         public void Method2()
         {
-            ClassS s = new ClassS();
+            
             s.Method3();
             s.Method1();
         }
 
         public void Method3()
         {
-            ClassY y = new ClassY();
             y.Method2();
         }
     }
